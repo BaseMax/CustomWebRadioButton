@@ -54,3 +54,7 @@ body
     */
     position: relative;
 }
+.radiobutton_container input:checked ~ .radiobutton_mark:after
+{
+    display: block;
+}
