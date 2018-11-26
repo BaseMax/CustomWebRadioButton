@@ -17,3 +17,40 @@ body
     /* #Bug: Cross Browser */
     user-select: none;
 }
+
+.radiobutton_container .radiobutton_mark
+{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #eeeeee;
+    /* #Bug: Cross Browser */
+    border-radius: 4px;
+    border-radius: 50%;
+}
+.radiobutton_container:hover input ~ .radiobutton_mark
+{
+    background-color: #cccccc;
+}
+.radiobutton_container input:checked ~ .radiobutton_mark
+{
+    background-color: #1DDBDE;
+}
+.radiobutton_container input
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.radiobutton_container .radiobutton_mark:after
+{
+    display: none;
+    content: "";
+    /*
+    position: absolute;
+    */
+    position: relative;
+}
