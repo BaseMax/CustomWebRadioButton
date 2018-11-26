@@ -4,3 +4,16 @@ body
     background-color: #E1FEFE;
 }
 */
+.radiobutton_container
+{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 40px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    /* #Bug: Cross Browser */
+    user-select: none;
+}
