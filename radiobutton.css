@@ -58,3 +58,18 @@ body
 {
     display: block;
 }
+.radiobutton_container .radiobutton_mark:after
+{
+    width: 4px;
+    height: 10px;
+    top: 7px;
+    left: 12px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 3px 3px 0;
+    /* #Bug: Cross Browser */
+    /*
+    transform: rotate(405deg);
+    */
+    transform: rotate(45deg);
+}
